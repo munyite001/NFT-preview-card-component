@@ -43,7 +43,7 @@
 --transition: all 0.2s linear;
 --font-size: 18px;
 --spacing: 0.2rem;
---radius: 0.35rem;
+--radius: 17px;
 --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 --max-width: 1170px;
@@ -82,20 +82,32 @@ main {
     margin: 3rem 1rem;
     border-radius: var(--radius);
     padding: 1rem;
-    max-width: 350px;
     height: auto;
 
 }
 
 .eth-image-container {
     width: 100%;
-
+    border-radius: var(--radius);
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.eth-image-container img {
+.ethereum {
     width: 100%;
     height: 100%;
     border-radius: var(--radius);
+    z-index: 2;
+}
+
+.view {
+    position: absolute;
+    color: var(--white);
+    z-index: 1;
+    
 }
 
 .text-container {
@@ -107,6 +119,7 @@ main {
     color: var(--white);
     font-size: 23px;
     margin: 1rem 0;
+    font-weight: 700;
 }
 .text-container p {
     color: var(--soft-blue);
@@ -166,10 +179,11 @@ main {
 /* DESKTOP DESIGN */
 @media (min-width:600px)
 {
-
     .container {
+        max-width: 320px;
         margin: 2rem auto;
     }
+
     .eth-image-container {
         display: flex;
         align-items: center;
@@ -177,9 +191,26 @@ main {
         margin: 0 auto;
     }
 
-
     
 }
+
+
+
+/* ACTIVE STATES */
+.ethereum:active {
+    z-index: 0;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.text-container h1:active,.user p a:active {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.text-container h1:hover {
+    cursor: pointer;
+}
+
+
 
 /* ATTRIBUTION */
 .attribution { 
