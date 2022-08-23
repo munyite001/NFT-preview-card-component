@@ -33,8 +33,8 @@ Users should be able to:
 ![Mobile Design](./Screenshots/Mobile%20design.png)
 ### Links
 
-- Solution URL: [Github Repo](giturl)
-- Live Site URL: [Live Preview](Netlify url)
+- Solution URL: [Github](https://github.com/munyite001/NFT-preview-card-component)
+- Live Site URL: [Live Preview](https://nft-card-preview-fr.netlify.app/)
 
 ## My process
 As always, I begin with analysis of both designs, identifying the breakpoints,i.e., how transitioning will happen from one device to another. Then, I lay the foundation with html. Then later on, I add the styling
@@ -57,7 +57,7 @@ I want to continue putting my css skills to the test, and to also work on harder
 
 ## Author
 
-- Website - [Github Repo](giturl)
+- Online Repo - [Github](https://github.com/munyite001/NFT-preview-card-component)
 - Frontend Mentor - [@munyite001](https://www.frontendmentor.io/profile/munyite001)
 - Twitter - [@Emunyite](https://www.twitter.com/emunyite)
 
